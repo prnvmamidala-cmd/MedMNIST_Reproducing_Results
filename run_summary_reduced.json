@@ -1,0 +1,9 @@
+{
+  "paper": "Doerrich et al. Sci Rep 2025; doi:10.1038/s41598-025-92156-9",
+  "protocol_tag": "REDUCED_10ep_native28",
+  "smoke": false,
+  "device": "cpu",
+  "seed": 9930641,
+  "n_rows": 3,
+  "outputs": "/workspace/medai_repro/outputs/our_baseline_metrics_reduced.csv"
+}

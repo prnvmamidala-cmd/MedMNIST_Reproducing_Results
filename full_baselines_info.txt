@@ -1,0 +1,48 @@
+====== MEDMNIST+ RESNET-18 REPRODUCTION ======
+[INFO] device=cpu protocol=REDUCED_10ep_native28 seed=9930641
+[INFO] datasets=['pneumoniamnist', 'bloodmnist', 'pathmnist']
+[INFO] NOTE: paper zero-pads 28->224; we train native 28 for CPU budget
+====== PNEUMONIAMNIST ======
+[INFO] task=binary-class n_classes=2 n_train=4708 n_val=524 n_test=624
+[INFO] epoch=1 train_loss=0.2043 val_acc=0.9561 val_auc=0.9875
+[INFO] epoch=2 train_loss=0.0713 val_acc=0.9714 val_auc=0.9919
+[INFO] epoch=3 train_loss=0.0391 val_acc=0.9695 val_auc=0.9933
+[INFO] epoch=4 train_loss=0.0240 val_acc=0.9676 val_auc=0.9938
+[INFO] epoch=5 train_loss=0.0099 val_acc=0.9752 val_auc=0.9953
+[INFO] epoch=6 train_loss=0.0070 val_acc=0.9637 val_auc=0.9938
+[INFO] epoch=7 train_loss=0.0057 val_acc=0.9752 val_auc=0.9957
+[INFO] epoch=8 train_loss=0.0035 val_acc=0.9695 val_auc=0.9951
+[INFO] epoch=9 train_loss=0.0050 val_acc=0.9752 val_auc=0.9955
+[INFO] epoch=10 train_loss=0.0037 val_acc=0.9733 val_auc=0.9949
+[INFO] early stop at epoch=10 (best_val_auc=0.9957)
+[INFO] TEST acc=0.8574 auc=0.9618 elapsed_s=44.9
+====== BLOODMNIST ======
+[INFO] task=multi-class n_classes=8 n_train=11959 n_val=1712 n_test=3421
+[INFO] epoch=1 train_loss=0.5528 val_acc=0.9100 val_auc=0.9932
+[INFO] epoch=2 train_loss=0.2074 val_acc=0.9334 val_auc=0.9960
+[INFO] epoch=3 train_loss=0.1377 val_acc=0.9363 val_auc=0.9963
+[INFO] epoch=4 train_loss=0.0951 val_acc=0.9433 val_auc=0.9960
+[INFO] epoch=5 train_loss=0.0621 val_acc=0.9439 val_auc=0.9968
+[INFO] epoch=6 train_loss=0.0423 val_acc=0.9428 val_auc=0.9969
+[INFO] epoch=7 train_loss=0.0262 val_acc=0.9398 val_auc=0.9965
+[INFO] epoch=8 train_loss=0.0168 val_acc=0.9433 val_auc=0.9966
+[INFO] epoch=9 train_loss=0.0120 val_acc=0.9468 val_auc=0.9971
+[INFO] epoch=10 train_loss=0.0098 val_acc=0.9474 val_auc=0.9966
+[INFO] TEST acc=0.9430 auc=0.9962 elapsed_s=112.6
+====== PATHMNIST ======
+[INFO] task=multi-class n_classes=9 n_train=89996 n_val=10004 n_test=7180
+[INFO] epoch=1 train_loss=0.4259 val_acc=0.9183 val_auc=0.9951
+[INFO] epoch=2 train_loss=0.2200 val_acc=0.9398 val_auc=0.9971
+[INFO] epoch=3 train_loss=0.1566 val_acc=0.9433 val_auc=0.9975
+[INFO] epoch=4 train_loss=0.1113 val_acc=0.9412 val_auc=0.9974
+[INFO] epoch=5 train_loss=0.0813 val_acc=0.9459 val_auc=0.9978
+[INFO] epoch=6 train_loss=0.0520 val_acc=0.9518 val_auc=0.9978
+[INFO] epoch=7 train_loss=0.0346 val_acc=0.9522 val_auc=0.9979
+[INFO] epoch=8 train_loss=0.0227 val_acc=0.9546 val_auc=0.9979
+[INFO] epoch=9 train_loss=0.0153 val_acc=0.9555 val_auc=0.9978
+[INFO] epoch=10 train_loss=0.0122 val_acc=0.9564 val_auc=0.9979
+[INFO] TEST acc=0.8546 auc=0.9809 elapsed_s=886.7
+[INFO] wrote /workspace/medai_repro/outputs/our_baseline_metrics_reduced.csv
+[INFO] wrote /workspace/medai_repro/outputs/comparison_ours_vs_published.csv
+====== OURS vs PUBLISHED (ResNet-18 E2E @ 28) ======
+[INFO] done

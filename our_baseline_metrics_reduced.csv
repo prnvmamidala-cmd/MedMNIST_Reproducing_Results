@@ -1,0 +1,4 @@
+dataset,protocol,model,img_size,epochs_ran_max,seed,device,n_train,n_val,n_test,our_test_acc,our_test_auc,published_acc_28_e2e,published_auc_28_e2e,published_acc_sd,published_auc_sd,delta_acc,delta_auc,elapsed_sec,smoke
+pneumoniamnist,REDUCED_10ep_native28,resnet18_imagenet,28,10,9930641,cpu,4708,524,624,0.857372,0.961818,0.8312,0.9501,0.011,0.003,0.026172,0.011718,44.9,False
+bloodmnist,REDUCED_10ep_native28,resnet18_imagenet,28,10,9930641,cpu,11959,1712,3421,0.942999,0.99621,0.9193,0.9924,0.0037,0.0004,0.023699,0.00381,112.6,False
+pathmnist,REDUCED_10ep_native28,resnet18_imagenet,28,10,9930641,cpu,89996,10004,7180,0.854596,0.980941,0.8554,0.9824,0.0087,0.0014,-0.000804,-0.001459,886.7,False
